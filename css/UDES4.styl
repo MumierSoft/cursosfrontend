@@ -2,11 +2,6 @@ gris_oscuro=#444
 naranja=#DD4F24
 azul=#22BCE0
 
-
-a 
-	color red
-	font-size 20px
-
 body
 	background #E8E8E8 
 	color gris_oscuro
@@ -23,6 +18,9 @@ footer
 	border-radius 2em
 	padding 1em 0
 	text-align center
+	bottom 0
+	position absolute
+	width 100%
 	
 header
 	background gris_oscuro
@@ -30,22 +28,52 @@ header
 	border-radius 2em
 	color white
 	padding 0.5em
-
 	position relative
 
 .logo
 	border-right 1px solid azul
 	float left
 	width 60px
+	img
+		border-radius 2em
+		height 50px
+		width 50px
 
 .titular
 	margin 0 80px 0 70px
 
-nav 
-	font-size 25px
-	background #000000
-	border-radius 1em
+.usuario 
+	position absolute
+	margin 0.2em
+	right 10px
+	top 10px
 
-li
-	display inline-block
-	align center
+	.avatar
+		margin 0 1.1em 0 0
+		position relative
+
+		img
+			border-radius 2em
+			width 50px
+
+nav 
+	background azul
+	border-left 15px solid white
+	border-radius 2em
+	font-size 25px
+	position relative
+	.menu
+		height 40px
+		margin 0
+		padding 0
+		li
+			display inline-block
+			align center
+			a 
+				color white
+				font-size 20px
+				padding 0 0.2em
+				margin 0 0.5em
+				text-decoration none
+				&:hover
+					background rgba(black,0.1)
